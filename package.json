@@ -1,0 +1,36 @@
+{
+  "name": "@strax/template-webpack-react",
+  "description": "New TypeScript project",
+  "private": true,
+  "version": "0.0.0",
+  "author": {
+    "name": "Sami Kukkonen",
+    "email": "sami@samikukkonen.fi"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-refresh": "0.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.10",
+    "@babel/plugin-syntax-top-level-await": "7.10.4",
+    "@babel/preset-react": "7.12.10",
+    "@babel/preset-typescript": "7.10.4",
+    "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
+    "@types/react": "17.0.0",
+    "@types/react-dom": "17.0.0",
+    "babel-loader": "8.2.2",
+    "css-loader": "5.0.1",
+    "fork-ts-checker-webpack-plugin": "6.0.6",
+    "html-webpack-plugin": "next",
+    "prettier": "2.2.1",
+    "style-loader": "2.0.0",
+    "terser-webpack-plugin": "5.0.3",
+    "typescript": "4.1.2",
+    "webpack": "5.10.0",
+    "webpack-cli": "4.2.0",
+    "webpack-dev-server": "4.0.0-beta.0"
+  }
+}
