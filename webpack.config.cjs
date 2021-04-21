@@ -1,6 +1,5 @@
 const ForkTSCheckerPlugin = require('fork-ts-checker-webpack-plugin')
 const HTMLPlugin = require('html-webpack-plugin')
-const ReactRefreshPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 const { HotModuleReplacementPlugin } = require('webpack')
 const Path = require('path')
 
@@ -34,7 +33,7 @@ module.exports = (env, argv) => {
                 ],
                 '@babel/typescript',
               ],
-              plugins: ['@babel/plugin-syntax-top-level-await', 'react-refresh/babel'],
+              plugins: ['@babel/plugin-syntax-top-level-await'],
             },
           },
           exclude: /node_modules/,
@@ -56,16 +55,9 @@ module.exports = (env, argv) => {
         },
       }),
       new HotModuleReplacementPlugin(),
-      new ReactRefreshPlugin(),
     ],
     experiments: {
-      asset: true,
       topLevelAwait: true,
-    },
-    devServer: {
-      static: {
-        watch: false,
-      },
     },
   }
 }
